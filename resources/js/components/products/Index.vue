@@ -14,9 +14,6 @@
                             <span v-for="category in product.categories" :key="category.id" v-text="category.name"
                                 class="me-2"></span>
                         </h6>
-
-                        <!-- <p class="card-text text-justify">{{ product.description }} </p> -->
-
                         <div class="buy d-flex justify-content-between align-items-center">
                             <div class="price text-success">
                                 <h5 class="mt-4" v-text="formatCurrency(product.price)"></h5>
@@ -29,7 +26,8 @@
             </div>
         </div>
         <div class="row mt-3" v-else>Loading...</div>
-    </div>
+        
+</div>
 </template>
 
 <script>
@@ -38,6 +36,10 @@ export default {
         formatCurrency(amount) {
             amount = (amount / 100);
             return amount.toLocaleString("en-US", { style: "currency", currency: "USD" });
+        },
+        testingfun(amiunt){
+            return amount / 100;
+            console.log(amount);
         }
     },
     computed: {
@@ -47,3 +49,10 @@ export default {
     }
 }
 </script>
+<style scoped>
+.btn {
+    background-color: #bcd0c7 !important;
+    border-color: #bcd0c7 !important;
+    color:black;
+}
+</style>

@@ -5135,7 +5135,7 @@ var render = function render() {
       href: "#"
     }
   }, [_c("svg", {
-    staticClass: "text-white p-2",
+    staticClass: "text-dark p-2",
     attrs: {
       xmlns: "http://www.w3.org/2000/svg",
       fill: "none",
@@ -5173,7 +5173,7 @@ var render = function render() {
         name: "order.checkout"
       }
     }
-  }, [_vm._v("\n                    Checkout "), _c("span", {
+  }, [_vm._v("\n                    Basket "), _c("span", {
     staticClass: "inline-block ms-1"
   }, [_vm._v("(" + _vm._s(this.$store.state.cart.length) + " item)")])])], 1)])])]);
 };
@@ -9883,7 +9883,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nsvg[data-v-6dde423b] {\r\n    width: 40px;\r\n    height: 40px;\r\n    background-color: #635bff;\r\n    border-radius: 50%;\r\n    margin-right: 5px;\n}\n.nav-item[data-v-6dde423b]{\r\n    cursor: pointer;\n}\n.btn[data-v-6dde423b]{\r\n    background-color: #635bff !important;\r\n    border-color:#635bff !important ;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nsvg[data-v-6dde423b] {\r\n    width: 40px;\r\n    height: 40px;\r\n    background-color: #bcd0c7;\r\n    border-radius: 50%;\r\n    margin-right: 5px;\r\n    color:black;\n}\n.nav-item[data-v-6dde423b]{\r\n    cursor: pointer;\n}\n.btn[data-v-6dde423b]{\r\n    background-color: #bcd0c7 !important;\r\n    border-color:#bcd0c7 !important ;\r\n    color:black;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

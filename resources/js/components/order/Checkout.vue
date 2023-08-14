@@ -4,7 +4,7 @@
             <div class="col-md-8">
                 <div class="mt-5">
                     <table class="table">
-                        <thead class="table-secondary">
+                        <thead class="table-success">
                             <tr>
                                 <th scope="col">Item</th>
                                 <th scope="col">Quantity</th>
@@ -18,7 +18,7 @@
                                 <td class="p-4" v-text="item.quantity"></td>
                                 <td class="p-4" v-text="cartLineTotal(item)"></td>
                                 <td class="w-10 text-right">
-                                    <button class="btn btn-sm btn-danger"
+                                    <button class="btn btn-sm btn-danger mt-2"
                                         @click="$store.commit('removeFromCart', index)">Remove</button>
                                 </td>
                             </tr>
@@ -127,7 +127,7 @@ export default {
         }
     },
     async mounted() {
-        this.stripe = await loadStripe("pk_test_51Nb0vUF5VUDK0JoTcK4qIUgGXLVOKAQh7mhrtx0dy2DLYkJjrRCj44zbOqH5uvTBbUeYsbzbOCXbmVXw94zdiJI10085z2T7Fv");
+        this.stripe = await loadStripe("put_your_publish_key");
         const elements = this.stripe.elements();
         this.cardElement = elements.create('card', {
             classes: {
@@ -207,7 +207,8 @@ export default {
 </script>
 <style scoped>
 .btn {
-    background-color: #635bff !important;
-    border-color: #635bff !important;
+    background-color: #bcd0c7 !important;
+    border-color: #bcd0c7 !important;
+    color:black;
 }
 </style>

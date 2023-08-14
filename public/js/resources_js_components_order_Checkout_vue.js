@@ -340,7 +340,7 @@ var render = function render() {
     }), _vm._v(" "), _c("td", {
       staticClass: "w-10 text-right"
     }, [_c("button", {
-      staticClass: "btn btn-sm btn-danger",
+      staticClass: "btn btn-sm btn-danger mt-2",
       on: {
         click: function click($event) {
           return _vm.$store.commit("removeFromCart", index);
@@ -616,7 +616,7 @@ var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
   return _c("thead", {
-    staticClass: "table-secondary"
+    staticClass: "table-success"
   }, [_c("tr", [_c("th", {
     attrs: {
       scope: "col"
@@ -672,7 +672,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.btn[data-v-301ab692] {\r\n    background-color: #635bff !important;\r\n    border-color: #635bff !important;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn[data-v-301ab692] {\r\n    background-color: #bcd0c7 !important;\r\n    border-color: #bcd0c7 !important;\r\n    color:black;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
